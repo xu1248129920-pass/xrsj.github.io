@@ -1,247 +1,39 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>新锐视界摄影奖 · New Vision Photography Award</title>
-  <style>
-    /* 全局重置与基础样式 */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
-      background-color: #1a1a1a;
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-    a { color: #2A5CAA; text-decoration: none; }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* 头部 */
-    header {
-      padding: 40px 0;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3.2rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-    .slogan {
-      font-size: 1.4rem;
-      color: #aaa;
-      margin-bottom: 30px;
-    }
-    .nav {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    .nav a {
-      color: #fff;
-      font-size: 1.1rem;
-      padding: 8px 16px;
-      border: 1px solid #333;
-      border-radius: 30px;
-      transition: all 0.3s;
-    }
-    .nav a:hover {
-      background: #2A5CAA;
-      border-color: #2A5CAA;
-    }
-
-    /* 轮播图（简化版：静态展示） */
-    .hero {
-      position: relative;
-      height: 70vh;
-      overflow: hidden;
-      margin: 40px 0;
-      border-radius: 12px;
-    }
-    .hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .hero-caption {
-      position: absolute;
-      bottom: 30px;
-      left: 30px;
-      background: rgba(0,0,0,0.6);
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 1.2rem;
-    }
-
-    /* 获奖者网格 */
-    .section {
-      padding: 60px 0;
-    }
-    .section-title {
-      text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-    }
-    .winners-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 30px;
-    }
-    .winner-card {
-      background: #222;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-    .winner-card:hover {
-      transform: translateY(-5px);
-    }
-    .winner-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 16px;
-    }
-    .card-content h3 {
-      margin-bottom: 6px;
-      font-size: 1.3rem;
-    }
-    .card-content p {
-      font-size: 0.95rem;
-      color: #bbb;
-    }
-
-    /* 页脚 */
-    footer {
-      text-align: center;
-      padding: 40px 0;
-      color: #777;
-      font-size: 0.95rem;
-      border-top: 1px solid #333;
-      margin-top: 40px;
-    }
-
-    /* 响应式 */
-    @media (max-width: 768px) {
-      h1 { font-size: 2.2rem; }
-      .slogan { font-size: 1.1rem; }
-      .hero { height: 50vh; }
-      .nav a { font-size: 1rem; padding: 6px 12px; }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="container">
-      <h1>新锐视界摄影奖</h1>
-      <div class="slogan">看见未被看见的视界</div>
-      <div class="nav">
-        <a href="#winners">2025获奖作品</a>
-        <a href="#about">关于奖项</a>
-        <a href="#submit">我要投稿</a>
-        <a href="#contact">联系</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- 英雄区域：展示年度摄影师作品 -->
+<section id="beijing-award" class="section">
   <div class="container">
-    <div class="hero">
-      <!-- 替换为你自己的图片 URL -->
-      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="年度摄影师作品">
-      <div class="hero-caption">2025 年度摄影师 · 《城市缝隙》· 李明</div>
+    <h2 class="section-title">“北京风光摄影大赛：城市的脉搏”获奖名单</h2>
+    <p style="text-align:center; color:#bbb; margin-bottom:40px;">
+      聚焦古都北京的历史肌理与当代律动 · 2025年12月揭晓
+    </p>
+
+    <!-- 金奖 -->
+    <div style="background:#252525; padding:25px; border-radius:12px; margin-bottom:30px; border-left:4px solid #FFD700;">
+      <h3 style="color:#FFD700; margin-bottom:10px;">🥇 金奖：《京华幻梦》</h3>
+      <p><strong>作者：</strong>AIGC Studio</p>
+      <p style="color:#aaa; font-style:italic;">
+        “以超现实的视觉语言重构紫禁城的时空边界，在数字诗意与历史厚重之间架起一座桥梁。”
+      </p>
     </div>
+
+    <!-- 银奖 -->
+    <div style="background:#252525; padding:25px; border-radius:12px; margin-bottom:30px; border-left:4px solid #C0C0C0;">
+      <h3 style="color:#C0C0C0; margin-bottom:10px;">🥈 银奖：《中轴心跳》</h3>
+      <p><strong>作者：</strong>陆知遥</p>
+      <p style="color:#aaa; font-style:italic;">
+        “从永定门到钟鼓楼，一条中轴线被赋予生命般的节奏感。古典秩序与现代速度在此共振。”
+      </p>
+    </div>
+
+    <!-- 铜奖 -->
+    <div style="background:#252525; padding:25px; border-radius:12px; border-left:4px solid #CD7F32;">
+      <h3 style="color:#CD7F32; margin-bottom:10px;">🥉 铜奖：《北京北京》</h3>
+      <p><strong>作者：</strong>青颖儿</p>
+      <p style="color:#aaa; font-style:italic;">
+        “胡同窗棂间的晨光、老人手中的搪瓷缸、墙角斑驳的‘拆’字——这些微小而真实的碎片，拼贴出最温柔的北京叙事。”
+      </p>
+    </div>
+
+    <p style="text-align:center; margin-top:30px; color:#777;">
+      完整入围作品将于2025年12月15日上线 | 线下展览：2026年1月 · 北京798艺术区
+    </p>
   </div>
-
-  <!-- 获奖者 -->
-  <section id="winners" class="section">
-    <div class="container">
-      <h2 class="section-title">2025 获奖者</h2>
-      <div class="winners-grid">
-        <div class="winner-card">
-          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="作品1">
-          <div class="card-content">
-            <h3>李明</h3>
-            <p>中国 · 28岁<br>年度摄影师</p>
-          </div>
-        </div>
-        <div class="winner-card">
-          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="作品2">
-          <div class="card-content">
-            <h3>王雨</h3>
-            <p>台湾 · 24岁<br>新锐入围</p>
-          </div>
-        </div>
-        <div class="winner-card">
-          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="作品3">
-          <div class="card-content">
-            <h3>陈朗</h3>
-            <p>新加坡 · 31岁<br>新锐入围</p>
-          </div>
-        </div>
-        <div class="winner-card">
-          <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="作品4">
-          <div class="card-content">
-            <h3>林小禾</h3>
-            <p>马来西亚 · 26岁<br>新锐入围</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 关于 -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2 class="section-title">关于奖项</h2>
-      <p style="text-align:center; max-width:800px; margin:0 auto; font-size:1.1rem;">
-        新锐视界摄影奖面向全球35岁以下华人摄影师，旨在发掘具有独立精神与当代视野的影像创作者。  
-        每年评选1位年度摄影师与5位新锐入围者，提供奖金、展览与出版支持。
-      </p>
-    </div>
-  </section>
-
-  <!-- 投稿 -->
-  <section id="submit" class="section">
-    <div class="container">
-      <h2 class="section-title">如何参选</h2>
-      <p style="text-align:center; max-width:800px; margin:0 auto;">
-        征稿时间：每年6月1日 – 9月30日<br>
-        投稿方式：<a href="https://forms.gle/your-form-link" target="_blank" style="color:#FF6B35;">点击填写 Google 表单</a><br>
-        （请准备好作品集链接或云盘地址）
-      </p>
-    </div>
-  </section>
-
-  <!-- 联系 -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2 class="section-title">联系</h2>
-      <p style="text-align:center;">
-        邮箱：info@newvisionaward.org<br>
-        微信公众号：新锐视界摄影奖
-      </p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      © 2025 新锐视界摄影奖 · New Vision Photography Award
-    </div>
-  </footer>
-
-</body>
-</html>
+</section>
