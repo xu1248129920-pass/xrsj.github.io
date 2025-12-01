@@ -77,8 +77,7 @@
     .hero img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      object-position: center;
+      object-fit: cover;
       display: block;
     }
     .hero-caption {
@@ -286,7 +285,6 @@
       color: #FF6B35;
     }
 
-    /* 响应式 */
     @media (max-width: 768px) {
       h1 { font-size: 2.2rem; }
       .slogan { font-size: 1.1rem; }
@@ -315,10 +313,51 @@
   <!-- 英雄区域：金奖作品 -->
   <div class="container">
     <div class="hero">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAVWCAYAAAD..." alt="金奖作品《京华幻梦》">
+      <img src="2025_gold.jpg" alt="金奖作品《京华幻梦》">
       <div class="hero-caption">金奖 · 《京华幻梦》 · AIGC Studio</div>
     </div>
   </div>
+
+  <!-- 获奖名单（2025年最新） -->
+  <section id="winners" class="section">
+    <div class="container">
+      <h2 class="section-title">2025年获奖名单</h2>
+      <div class="winners-grid">
+        <!-- 金奖 -->
+        <div class="winner-card">
+          <div class="medal gold">金</div>
+          <img src="2025_gold.jpg" alt="京华幻梦">
+          <div class="card-content">
+            <h3>《京华幻梦》</h3>
+            <span class="author">AIGC Studio</span>
+            <p>金奖作品 · 以AI生成影像重构北京的时空梦境</p>
+          </div>
+        </div>
+
+        <!-- 银奖 -->
+        <div class="winner-card">
+          <div class="medal silver">银</div>
+          <img src="2025_silver.jpg" alt="中轴心跳">
+          <div class="card-content">
+            <h3>《中轴心跳》</h3>
+            <span class="author">陆知遥</span>
+            <p>银奖作品 · 捕捉北京中轴线上的日常律动</p>
+          </div>
+        </div>
+
+        <!-- 铜奖 -->
+        <div class="winner-card">
+          <div class="medal bronze">铜</div>
+          <img src="2025_bronze.jpg" alt="北京北京">
+          <div class="card-content">
+            <h3>《北京北京》</h3>
+            <span class="author">青颖儿</span>
+            <p>铜奖作品 · 双重视角下的城市身份对话</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- 关于大赛 -->
   <section id="about" class="section">
@@ -354,7 +393,7 @@
     </div>
   </section>
 
-  <!-- 往届作品回顾 -->
+  <!-- 往届作品回顾（2024 → 2023 → 2022） -->
   <section id="past" class="past-section">
     <div class="container">
       <h2>往届作品回顾</h2>
@@ -366,74 +405,33 @@
         <!-- 2024年金奖 -->
         <div class="past-card gold">
           <div class="medal gold">金</div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACCCAMAAADQNkiAAAAA1BMVEWZmZn////+DmQs7AAAAHlJREFUeJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G0AcAABfXv9YQAAAABJRU5ErkJggg==" alt="2024金奖">
+          <img src="2024_gold.jpg" alt="2024金奖">
           <div class="card-content">
-            <h3>《胡同里的四季》</h3>
+            <h3>《长城日出》</h3>
             <span class="author">陈晓明</span>
-            <p>2024年金奖 · 用镜头记录胡同里三代人的生活变迁</p>
+            <p>2024年金奖 · 雾霭中的长城如巨龙盘踞山脊</p>
           </div>
         </div>
 
         <!-- 2023年银奖 -->
         <div class="past-card silver">
           <div class="medal silver">银</div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACCCAMAAADQNkiAAAAA1BMVEWZmZn////+DmQs7AAAAHlJREFUeJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G0AcAABfXv9YQAAAABJRU5ErkJggg==" alt="2023银奖">
+          <img src="2023_silver.jpg" alt="2023银奖">
           <div class="card-content">
-            <h3>《中轴线的呼吸》</h3>
+            <h3>《鸟巢之光》</h3>
             <span class="author">林雨桐</span>
-            <p>2023年银奖 · 从永定门到钟鼓楼的光影流动</p>
+            <p>2023年银奖 · 鸟巢在夜色中闪耀着科技之美</p>
           </div>
         </div>
 
         <!-- 2022年铜奖 -->
         <div class="past-card bronze">
           <div class="medal bronze">铜</div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACCCAMAAADQNkiAAAAA1BMVEWZmZn////+DmQs7AAAAHlJREFUeJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G0AcAABfXv9YQAAAABJRU5ErkJggg==" alt="2022铜奖">
+          <img src="2022_bronze.jpg" alt="2022铜奖">
           <div class="card-content">
-            <h3>《天坛的晨光》</h3>
+            <h3>《国贸星河》</h3>
             <span class="author">王建国</span>
-            <p>2022年铜奖 · 晨雾中天坛祈年殿的静谧时刻</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 获奖者 -->
-  <section id="winners" class="section">
-    <div class="container">
-      <h2 class="section-title">“城市的脉搏”获奖名单</h2>
-      <div class="winners-grid">
-        <!-- 金奖 -->
-        <div class="winner-card">
-          <div class="medal gold">金</div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAVWCAYAAAD..." alt="京华幻梦">
-          <div class="card-content">
-            <h3>《京华幻梦》</h3>
-            <span class="author">AIGC Studio</span>
-            <p>金奖作品 · 以AI生成影像重构北京的时空梦境</p>
-          </div>
-        </div>
-
-        <!-- 银奖 -->
-        <div class="winner-card">
-          <div class="medal silver">银</div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAVWCAYAAAD..." alt="中轴心跳">
-          <div class="card-content">
-            <h3>《中轴心跳》</h3>
-            <span class="author">陆知遥</span>
-            <p>银奖作品 · 捕捉北京中轴线上的日常律动</p>
-          </div>
-        </div>
-
-        <!-- 铜奖 -->
-        <div class="winner-card">
-          <div class="medal bronze">铜</div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABVYAAAVWCAYAAAD..." alt="北京北京">
-          <div class="card-content">
-            <h3>《北京北京》</h3>
-            <span class="author">青颖儿</span>
-            <p>铜奖作品 · 双重视角下的城市身份对话</p>
+            <p>2022年铜奖 · 星空下CBD的现代都市韵律</p>
           </div>
         </div>
       </div>
@@ -461,7 +459,6 @@
     </div>
   </section>
 
-  <!-- 页脚 -->
   <footer>
     <div class="container">
       © 2025 北京风光摄影大赛 · “城市的脉搏”<br>
