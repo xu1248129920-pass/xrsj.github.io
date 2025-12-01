@@ -1,39 +1,282 @@
-<section id="beijing-award" class="section">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>北京风光摄影大赛 · “城市的脉搏”</title>
+  <style>
+    /* 全局重置与基础样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    a { color: #2A5CAA; text-decoration: none; }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* 头部 */
+    header {
+      padding: 40px 0;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #FF6B35, #2A5CAA);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .slogan {
+      font-size: 1.4rem;
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      color: #fff;
+      font-size: 1.1rem;
+      padding: 8px 16px;
+      border: 1px solid #333;
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+    .nav a:hover {
+      background: #2A5CAA;
+      border-color: #2A5CAA;
+    }
+
+    /* 英雄区域 */
+    .hero {
+      position: relative;
+      height: 70vh;
+      overflow: hidden;
+      margin: 40px 0;
+      border-radius: 12px;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-caption {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      background: rgba(0,0,0,0.7);
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    /* 获奖者网格 */
+    .section {
+      padding: 60px 0;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+    }
+    .winners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .winner-card {
+      background: #222;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      position: relative;
+    }
+    .winner-card:hover {
+      transform: translateY(-6px);
+    }
+    .medal {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .gold { background: #FFD700; color: #000; }
+    .silver { background: #C0C0C0; color: #000; }
+    .bronze { background: #CD7F32; color: #fff; }
+
+    .winner-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 18px;
+    }
+    .card-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .card-content .author {
+      color: #2A5CAA;
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      color: #bbb;
+    }
+
+    /* 页脚 */
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #777;
+      font-size: 0.95rem;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      .slogan { font-size: 1.1rem; }
+      .hero { height: 50vh; }
+      .nav a { font-size: 1rem; padding: 6px 12px; }
+      .hero-caption { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>北京风光摄影大赛</h1>
+      <div class="slogan">“城市的脉搏” · 获奖作品展</div>
+      <div class="nav">
+        <a href="#winners">获奖名单</a>
+        <a href="#about">关于大赛</a>
+        <a href="#submit">下届投稿</a>
+        <a href="#contact">联系</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 英雄区域：金奖作品 -->
   <div class="container">
-    <h2 class="section-title">“北京风光摄影大赛：城市的脉搏”获奖名单</h2>
-    <p style="text-align:center; color:#bbb; margin-bottom:40px;">
-      聚焦古都北京的历史肌理与当代律动 · 2025年12月揭晓
-    </p>
-
-    <!-- 金奖 -->
-    <div style="background:#252525; padding:25px; border-radius:12px; margin-bottom:30px; border-left:4px solid #FFD700;">
-      <h3 style="color:#FFD700; margin-bottom:10px;">🥇 金奖：《京华幻梦》</h3>
-      <p><strong>作者：</strong>AIGC Studio</p>
-      <p style="color:#aaa; font-style:italic;">
-        “以超现实的视觉语言重构紫禁城的时空边界，在数字诗意与历史厚重之间架起一座桥梁。”
-      </p>
+    <div class="hero">
+      <!-- 可替换为真实金奖作品图 -->
+      <img src="https://images.unsplash.com/photo-1568028654672-5c5d7e4b8e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="金奖作品《京华幻梦》">
+      <div class="hero-caption">金奖 · 《京华幻梦》 · AIGC Studio</div>
     </div>
-
-    <!-- 银奖 -->
-    <div style="background:#252525; padding:25px; border-radius:12px; margin-bottom:30px; border-left:4px solid #C0C0C0;">
-      <h3 style="color:#C0C0C0; margin-bottom:10px;">🥈 银奖：《中轴心跳》</h3>
-      <p><strong>作者：</strong>陆知遥</p>
-      <p style="color:#aaa; font-style:italic;">
-        “从永定门到钟鼓楼，一条中轴线被赋予生命般的节奏感。古典秩序与现代速度在此共振。”
-      </p>
-    </div>
-
-    <!-- 铜奖 -->
-    <div style="background:#252525; padding:25px; border-radius:12px; border-left:4px solid #CD7F32;">
-      <h3 style="color:#CD7F32; margin-bottom:10px;">🥉 铜奖：《北京北京》</h3>
-      <p><strong>作者：</strong>青颖儿</p>
-      <p style="color:#aaa; font-style:italic;">
-        “胡同窗棂间的晨光、老人手中的搪瓷缸、墙角斑驳的‘拆’字——这些微小而真实的碎片，拼贴出最温柔的北京叙事。”
-      </p>
-    </div>
-
-    <p style="text-align:center; margin-top:30px; color:#777;">
-      完整入围作品将于2025年12月15日上线 | 线下展览：2026年1月 · 北京798艺术区
-    </p>
   </div>
-</section>
+
+  <!-- 获奖者 -->
+  <section id="winners" class="section">
+    <div class="container">
+      <h2 class="section-title">“城市的脉搏”获奖名单</h2>
+      <div class="winners-grid">
+        <!-- 金奖 -->
+        <div class="winner-card">
+          <div class="medal gold">金</div>
+          <img src="https://images.unsplash.com/photo-1568028654672-5c5d7e4b8e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="京华幻梦">
+          <div class="card-content">
+            <h3>《京华幻梦》</h3>
+            <span class="author">AIGC Studio</span>
+            <p>金奖作品 · 以AI生成影像重构北京的时空梦境</p>
+          </div>
+        </div>
+
+        <!-- 银奖 -->
+        <div class="winner-card">
+          <div class="medal silver">银</div>
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="中轴心跳">
+          <div class="card-content">
+            <h3>《中轴心跳》</h3>
+            <span class="author">陆知遥</span>
+            <p>银奖作品 · 捕捉北京中轴线上的日常律动</p>
+          </div>
+        </div>
+
+        <!-- 铜奖 -->
+        <div class="winner-card">
+          <div class="medal bronze">铜</div>
+          <img src="https://images.unsplash.com/photo-1503435983720-faff6b5b4c1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="北京北京">
+          <div class="card-content">
+            <h3>《北京北京》</h3>
+            <span class="author">青颖儿</span>
+            <p>铜奖作品 · 双重视角下的城市身份对话</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">关于大赛</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto; font-size:1.1rem;">
+        “北京风光摄影大赛”以“城市的脉搏”为主题，面向全国摄影师征集展现北京城市精神、建筑肌理与人文节奏的影像作品。  
+        本次共收到来自28个省市的1,200余组投稿，经专家评审团匿名评选，最终产生金、银、铜奖各1名。
+      </p>
+    </div>
+  </section>
+
+  <!-- 投稿 -->
+  <section id="submit" class="section">
+    <div class="container">
+      <h2 class="section-title">下届投稿</h2>
+      <p style="text-align:center; max-width:800px; margin:0 auto;">
+        2026年征稿将于5月1日开启<br>
+        关注微信公众号「北京影像计划」获取通知<br>
+        或邮件订阅：<a href="mailto:info@bjphotoaward.org" style="color:#FF6B35;">info@bjphotoaward.org</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">联系</h2>
+      <p style="text-align:center;">
+        主办：北京市摄影家协会 × 城市视觉实验室<br>
+        邮箱：info@bjphotoaward.org
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2025 北京风光摄影大赛 · “城市的脉搏”
+    </div>
+  </footer>
+
+</body>
+</html>
